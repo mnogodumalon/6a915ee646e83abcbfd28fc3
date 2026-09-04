@@ -1,0 +1,31 @@
+{
+  "pages": {
+    "en": {
+      "Alle Terminwünsche sind bereits eingeplant.": "All appointment requests are already scheduled.",
+      "Eichfristen fällig": "Calibration Deadlines Due",
+      "Einsatz anlegen": "Create Deployment",
+      "Einsatz planen": "Schedule Deployment",
+      "Geplant": "Scheduled",
+      "Heute": "Today",
+      "Heute fällig": "Due Today",
+      "Heute im Einsatz bei {0}.": "On deployment at {0} today.",
+      "Heute mehrere Einsätze geplant.": "Multiple deployments scheduled today.",
+      "In Durchführung": "In Progress",
+      "Keine Einsätze heute geplant.": "No deployments scheduled for today.",
+      "Keine fälligen Eichfristen — alles aktuell.": "No calibration deadlines due — everything up to date.",
+      "Neuer Einsatz": "New Deployment",
+      "Neues Protokoll": "New Log",
+      "Offene Terminwünsche": "Open Appointment Requests",
+      "Ohne Nr.": "No No.",
+      "Protokoll": "Log",
+      "Terminwunsch erfassen": "Record Appointment Request",
+      "Unbekannt": "Unknown",
+      "Weiter: {0}": "Next: {0}",
+      "haben offene Terminwünsche": "have open appointment requests",
+      "hat einen offenen Terminwunsch": "has an open appointment request",
+      "noch kein Einsatz geplant.": "no deployment scheduled yet.",
+      "Überfällig": "Overdue"
+    }
+  },
+  "v": 1
+}

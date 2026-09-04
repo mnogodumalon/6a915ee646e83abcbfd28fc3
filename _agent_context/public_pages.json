@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "terminwunsch",
+      "type": "custom",
+      "entity": "terminwunsch",
+      "title": "Serviceanfrage stellen",
+      "published": true,
+      "fields": [
+        "firmenname",
+        "vorname",
+        "nachname",
+        "telefon",
+        "email",
+        "strasse",
+        "hausnummer",
+        "plz",
+        "ort",
+        "waagentyp",
+        "anzahl_waagen",
+        "serviceart",
+        "wunschzeitraum_von",
+        "wunschzeitraum_bis",
+        "bevorzugte_tageszeit",
+        "hinweise"
+      ]
+    },
+    {
+      "slug": "terminanfrage",
+      "type": "custom",
+      "entity": "terminwunsch",
+      "title": "Terminanfrage",
+      "published": false,
+      "fields": [
+        "firmenname",
+        "vorname",
+        "nachname",
+        "telefon",
+        "email",
+        "strasse",
+        "hausnummer",
+        "plz",
+        "ort",
+        "waagentyp",
+        "anzahl_waagen",
+        "serviceart",
+        "wunschzeitraum_von",
+        "wunschzeitraum_bis",
+        "bevorzugte_tageszeit",
+        "hinweise"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Kundenstamm": {
+      "placeholders_set": 9,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontakt-Info, Adresse). Keine Number-Felder, keine Lookup-/Applookup-Beziehungen zu anderen Entities, nichts berechenbar."
+    },
+    "Mitarbeiterstamm": {
+      "placeholders_set": 10,
+      "defaults_keys": ["eichberechtigung"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit Bool-Feld (Eichberechtigung) gesetzt auf true (Aktivitäts-Semantik). Keine Berechnung nötig."
+    },
+    "Fahrzeugstamm": {
+      "placeholders_set": 9,
+      "defaults_keys": ["zulassungsdatum", "naechste_hauptuntersuchung", "naechste_eichung_fahrzeug"],
+      "computed_keys": [],
+      "reason": "Fahrzeuginventar mit Wartungs-Terminen. Date-Defaults für Erfassungs- und Wartungs-Semantik. Keine numerischen Berechnungen nötig."
+    },
+    "Terminwunsch": {
+      "placeholders_set": 15,
+      "defaults_keys": ["anzahl_waagen", "wunschzeitraum_von"],
+      "computed_keys": [],
+      "reason": "Kundenanfrage-Formular. Anzahl und Zeitfenster vorbelegte Defaults. Multiplelookup (Servicearten) mit UI-Ansage für Aufzählung. Keine Berechnung."
+    },
+    "Einsatzplanung": {
+      "placeholders_set": 17,
+      "defaults_keys": ["status", "einsatzdatum", "geplante_startzeit", "geplante_endzeit", "pausendauer_min", "arbeitszeit_eingehalten", "pause_geplant"],
+      "computed_keys": [],
+      "reason": "Dispatch-Logik mit Zeitfenster (datetimeminute Pair) und Bool-Felder. Status, Datum und Bool-Defaults gesetzt. Arbeitszeit-Prüfung gehört zum Backend-Validator, nicht zur Formel."
+    },
+    "Eichprotokoll": {
+      "placeholders_set": 17,
+      "defaults_keys": ["eichungsdatum", "eichergebnis"],
+      "computed_keys": ["abweichung_kg"],
+      "reason": "Prüfdokumentation mit Messwerten. Abweichung = Istwert - Vorlagewert (MODUS 1 Formel). Eichungsdatum und Eichergebnis vorbelegte Defaults."
+    }
+  }
+}
