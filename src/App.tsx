@@ -10,7 +10,6 @@ import DashboardReady from '@/pages/DashboardReady';
 import PublicPagesAdmin from '@/pages/PublicPagesAdmin';
 import IntentsAdmin from '@/pages/IntentsAdmin';
 // <custom:imports>
-const IntentNeuerEinsatzPage = lazy(() => import('@/pages/intents/NeuerEinsatzPage'));
 import { DashboardSkeleton } from '@/components/DashboardStates';
 const IntentEichprotokollErstellenPage = lazy(() => import('@/pages/intents/EichprotokollErstellenPage'));
 // </custom:imports>
@@ -80,7 +79,6 @@ export default function App() {
                 <Route path="verwaltung/ablaeufe" element={<IntentsAdmin />} />
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 {/* <custom:routes> */}
-                <Route path="intents/neuer-einsatz" element={<Suspense fallback={<DashboardSkeleton />}><IntentNeuerEinsatzPage /></Suspense>} />
                 <Route path="intents/eichprotokoll-erstellen" element={<Suspense fallback={<DashboardSkeleton />}><IntentEichprotokollErstellenPage /></Suspense>} />
                 {/* </custom:routes> */}
                 {/* An unknown hash (a bookmark from before a rebuild renamed the

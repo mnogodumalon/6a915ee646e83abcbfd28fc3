@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "flows": [],
+  "unregistered_pages": [
+    {
+      "file": "src/pages/intents/EichprotokollErstellenPage.tsx",
+      "summary": "/**\n * Eichprotokoll erstellen — 5-Schritt-Wizard.\n * Steps: 1) Einsatz wählen → 2) Kunde & Waage → 3) Messwerte & Eichklasse → 4) Prüfer → 5) Prüfen & anlegen.\n * Reads: einsatzplanung, kundenstamm. Writes: eichprotokoll (createEichprotokollEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, ChoiceGroup, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "ChoiceGroup",
+        "DatePicker",
+        "EntitySelectStep",
+        "Field",
+        "Input",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "Textarea",
+        "WizardStep"
+      ],
+      "writes": []
+    },
+    {
+      "file": "src/pages/intents/NeuerEinsatzPage.tsx",
+      "summary": "/**\n * Neuer Einsatz — 5-Schritt-Wizard.\n * Steps: 1) Terminwünsche wählen → 2) Einsatzdetails → 3) Mitarbeiter & Fahrzeuge → 4) Zusammenfassung → 5) Erfolg.\n * Reads: terminwunsch, mitarbeiterstamm, fahrzeugstamm.\n * Writes: einsatzplanung (createEinsatzplanungEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, ChoiceGroup, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "Bound",
+        "ChoiceGroup",
+        "EntitySelectStep",
+        "Field",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    }
+  ]
+}

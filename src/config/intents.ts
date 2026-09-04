@@ -20,7 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
-import { IconRoute, IconClipboardCheck } from '@tabler/icons-react';
+import { IconClipboardCheck } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -43,7 +43,6 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
-  { path: '/intents/neuer-einsatz', label: { de: 'Neuer Einsatz', en: 'New deployment' }, icon: IconRoute, description: 'Einsatz aus Terminwünschen planen und Mitarbeiter & Fahrzeuge zuordnen' },
   { path: '/intents/eichprotokoll-erstellen', label: { de: 'Eichprotokoll', en: 'Calibration record' }, icon: IconClipboardCheck, description: 'Eichprotokoll nach einem abgeschlossenen Einsatz anlegen' },
   // </custom:intents>
 ];
