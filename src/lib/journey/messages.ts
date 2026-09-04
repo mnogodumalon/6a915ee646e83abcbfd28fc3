@@ -39,6 +39,12 @@ export type MessageFieldKey<E extends EntityKey> = E extends keyof MessageFields
 
 export const REQUIRED_MESSAGES: { [E in EntityKey]?: Partial<Record<MessageFieldKey<E>, string>> } = {
   // <custom:messages>
+  kundenstamm: { firmenname: "Bitte den Firmennamen eingeben.", vorname: "Bitte den Vornamen des Ansprechpartners eingeben.", nachname: "Bitte den Nachnamen des Ansprechpartners eingeben.", strasse: "Bitte die Straße eingeben.", hausnummer: "Bitte die Hausnummer eingeben.", plz: "Bitte die Postleitzahl eingeben.", ort: "Bitte den Ort eingeben." },
+  mitarbeiterstamm: { vorname: "Bitte den Vornamen eingeben.", nachname: "Bitte den Nachnamen eingeben." },
+  fahrzeugstamm: { kennzeichen: "Bitte das Kennzeichen eingeben.", bezeichnung: "Bitte die Fahrzeugbezeichnung eingeben.", fahrzeugtyp: "Bitte den Fahrzeugtyp wählen." },
+  terminwunsch: { firmenname: "Bitte den Firmennamen eingeben.", vorname: "Bitte den Vornamen eingeben.", nachname: "Bitte den Nachnamen eingeben.", telefon: "Bitte eine Telefonnummer eingeben.", strasse: "Bitte die Straße eingeben.", hausnummer: "Bitte die Hausnummer eingeben.", plz: "Bitte die Postleitzahl eingeben.", ort: "Bitte den Ort eingeben.", waagentyp: "Bitte den Waagentyp wählen.", anzahl_waagen: "Bitte die Anzahl der Waagen eingeben.", serviceart: "Bitte mindestens eine Serviceart wählen.", wunschzeitraum_von: "Bitte den gewünschten Starttermin wählen." },
+  einsatzplanung: { einsatznummer: "Bitte eine Einsatznummer vergeben.", einsatzdatum: "Bitte das Einsatzdatum wählen.", geplante_startzeit: "Bitte die geplante Startzeit eingeben.", geplante_endzeit: "Bitte die geplante Endzeit eingeben.", status: "Bitte einen Status wählen.", terminwuensche: "Bitte mindestens einen Terminwunsch zuordnen.", mitarbeiter: "Bitte mindestens einen Mitarbeiter zuordnen.", fahrzeuge: "Bitte mindestens ein Fahrzeug zuordnen." },
+  eichprotokoll: { protokollnummer: "Bitte eine Protokollnummer vergeben.", einsatz: "Bitte den zugehörigen Einsatz wählen.", kunde: "Bitte einen Kunden wählen.", waagentyp: "Bitte den Waagentyp wählen.", eichergebnis: "Bitte das Eichergebnis festhalten.", pruefer_vorname: "Bitte den Vornamen des Prüfers eingeben.", pruefer_nachname: "Bitte den Nachnamen des Prüfers eingeben." },
   // </custom:messages>
 };
 
